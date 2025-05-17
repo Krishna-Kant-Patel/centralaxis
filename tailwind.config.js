@@ -2,8 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+       boxShadow: {
+      'custom': '0 4px 6px rgba(0, 0, 0, 0.1)',
+    },
+    },
   },
-  darkMode: 'class', // For dark mode toggle
   plugins: [],
 }
