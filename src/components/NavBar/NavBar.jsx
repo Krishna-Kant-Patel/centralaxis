@@ -1,49 +1,20 @@
 import React from 'react'
 import Dropdown from '../Dropdown/Dropdown';
 import { Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { menuItems, SolutionItems, complianceInfo, energyFundamentals } from '../Data/linkDatas';
 
 function NavBar() {
-//     const menuItems = [
-//   "Monitoring Devices",
-//   "Asset Tracking",
-//   "Network Management",
-//   "Change Management",
-//   "Colocation Management",
-//   "Data Center Planner",
-//   "Firmware Management",
-//   "IP Address Management",
-//   "Customer Portal",
-//   "Custom Insights"
-// ];
-// const SolutionItems = [
-//   "Digital Twins",
-//   "Smart Power Mapping",
-//   "Predictive Failure and Alerting",
-//   "Smart Control Systems",
-//   "Automated Discovery"
-// ];
-// const complianceInfo = [
-//   "DCOI Compliance",
-//   "(EU) 2023/1791",
-//   "EN 50600",
-//   "LEED Certification",
-//   "ISO/IEC 30134-2",
-//   "(EPA) ENERGY STAR",
-//   "European Commission Joint Research Centre (JRC)"
-// ];
-// const energyFundamentals = [
-//   "Energy Efficiency",
-//   "Stranded Energy Map",
-//   "Environmental Product Declaration",
-//   "Renewables Integration",
-//   "Power Resource Management"
-// ];
+  const navigate = useNavigate();
+  const handleLogoClick = () => {
+    navigate('/');
+  };
+
   return (
     <div><header className="flex items-center justify-between px-4 md:px-12 py-4 bg-black">
-        <div className="flex items-center space-x-2">
+        <div onClick={handleLogoClick} className="flex items-center space-x-2 cursor-pointer">
           <img src="https://www.centralaxis.com/_next/image?url=%2Flogo_white_icon_only.png&w=96&q=75" alt="Logo" className="h-8 w-8" />
-          <span className="text-xl font-semibold">CentralAxis</span>
+          <span className="text-xl font-semibold text-[#FAFAFA]">CentralAxis</span>
         </div>
 
         {/* Desktop Nav */}
