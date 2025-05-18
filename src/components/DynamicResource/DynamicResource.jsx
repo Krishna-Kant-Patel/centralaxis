@@ -5,7 +5,7 @@ import {
   BarChartIcon,
   SmileIcon,
   LayoutIcon,
-} from "lucide-react"; // Using Lucide icons for similar style
+} from "lucide-react"; 
 
 const features = [
   {
@@ -44,7 +44,7 @@ export default function DynamicResourceManagement() {
   return (
     <section className=" text-white py-20 px-6 md:px-16">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-        {/* Left Content */}
+        
         <div>
           <span className="bg-[#18181B] text-xs px-3 py-1 rounded-full inline-block mb-4">
             Built for Scale
@@ -58,7 +58,6 @@ export default function DynamicResourceManagement() {
           </p>
         </div>
 
-        {/* Right Content */}
         <div className="space-y-4">
           {features.map((item, index) => (
             <div

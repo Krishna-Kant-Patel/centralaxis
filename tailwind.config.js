@@ -6,6 +6,15 @@ export default {
        boxShadow: {
       'custom': '0 4px 6px rgba(0, 0, 0, 0.1)',
     },
+    animation: {
+        scroll: 'scroll 30s linear infinite',
+      },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-50%)' },
+        },
+      },
     },
   },
   plugins: [],
