@@ -1,6 +1,45 @@
 import React from "react";
+import Dropdown from "../Dropdown/Dropdown";
 
 const HeroSection = () => {
+
+const menuItems = [
+  "Monitoring Devices",
+  "Asset Tracking",
+  "Network Management",
+  "Change Management",
+  "Colocation Management",
+  "Data Center Planner",
+  "Firmware Management",
+  "IP Address Management",
+  "Customer Portal",
+  "Custom Insights"
+];
+const SolutionItems = [
+  "Digital Twins",
+  "Smart Power Mapping",
+  "Predictive Failure and Alerting",
+  "Smart Control Systems",
+  "Automated Discovery"
+];
+const complianceInfo = [
+  "DCOI Compliance",
+  "(EU) 2023/1791",
+  "EN 50600",
+  "LEED Certification",
+  "ISO/IEC 30134-2",
+  "(EPA) ENERGY STAR",
+  "European Commission Joint Research Centre (JRC)"
+];
+const energyFundamentals = [
+  "Energy Efficiency",
+  "Stranded Energy Map",
+  "Environmental Product Declaration",
+  "Renewables Integration",
+  "Power Resource Management"
+];
+
+
   return (
     <div className="bg-black text-white flex flex-col">
       {/* Navbar */}
@@ -12,10 +51,11 @@ const HeroSection = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex space-x-6 text-sm font-medium">
-          <div className="cursor-pointer">Data Center Infrastructure Management ▾</div>
-          <div className="cursor-pointer">Intelligence Solutions ▾</div>
-          <div className="cursor-pointer">Data Center Compliance ▾</div>
-          <div className="cursor-pointer">Sustainability Blog ▾</div>
+          <Dropdown title="Data Center Infrastructure Management " items={menuItems} boolean={false}/>
+          <Dropdown title="Intelligence Solutions" items={SolutionItems} boolean={false}/>
+          <Dropdown title="Data Center Compliance" items={complianceInfo} boolean={false}/>
+          <Dropdown title="Sustainability Blog" items={energyFundamentals}   boolean={true} />
+          
         </nav>
 
         {/* Mobile Menu Icon */}
