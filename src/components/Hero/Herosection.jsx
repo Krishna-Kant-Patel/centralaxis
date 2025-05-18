@@ -6,7 +6,7 @@ const HeroSection = () => {
       {/* Navbar */}
       <header className="flex items-center justify-between px-4 md:px-12 py-4 bg-black">
         <div className="flex items-center space-x-2">
-          <img src="/logo.svg" alt="Logo" className="h-8 w-8" />
+          <img src="https://www.centralaxis.com/_next/image?url=%2Flogo_white_icon_only.png&w=96&q=75" alt="Logo" className="h-8 w-8" />
           <span className="text-xl font-semibold">CentralAxis</span>
         </div>
 

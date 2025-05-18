@@ -72,33 +72,47 @@ const featuresData = [
 function BuildForAI() {
   return (
     <>
-    <div className="w-full h-auto bg-[#09090b] flex flex-col items-center justify-center mt-11">
+      <div className="w-full h-auto bg-[#09090b] flex flex-col items-center justify-center mt-11 mb-8">
         <div className="flex flex-col items-center justify-center text-center gap-4 px-4 md:px-0">
-            <h1 className=" text-[#6f6f78] bg-[#18181b] px-4 py-2 rounded-full text-sm cursor-pointer">
-                Build for AI
-            </h1>
-            <h2 className="text-[#ffffff] text-2xl md:text-6xl font-bold">
-                Modernizing the Digital Backbone
-            </h2>
-            <p className="text-gray-400 text-sm md:text-lg mb-8">
-                Data center software (DCIM, BMS and EPMS) has stagnated. We've built a better way.
-            </p>
+          <h1 className=" text-[#6f6f78] bg-[#18181b] px-4 py-2 rounded-full text-sm cursor-pointer">
+            Build for AI
+          </h1>
+          <h2 className="text-[#ffffff] text-2xl md:text-6xl font-bold">
+            Modernizing the Digital Backbone
+          </h2>
+          <p className="text-gray-400 text-sm md:text-lg mb-8">
+            Data center software (DCIM, BMS and EPMS) has stagnated. We've built a better way.
+          </p>
         </div>
-         <div className="bg-[#09090b] px-4 sm:px-8 lg:px-16 ">
-      {featuresData.map((feature, index) => (
-        <FeatureCard
-          key={index}
-          title={feature.title}
-          description={feature.description}
-          points={feature.points}
-          videoSrc={feature.videoSrc}
-          reverse={index % 2 === 1} 
-        />
-      ))}
-    </div>
-    </div>
-    
-    
+        <div className="bg-[#09090b] px-4 sm:px-8 lg:px-16 ">
+          {featuresData.map((feature, index) => (
+            <FeatureCard
+              key={index}
+              title={feature.title}
+              description={feature.description}
+              points={feature.points}
+              videoSrc={feature.videoSrc}
+              reverse={index % 2 === 1}
+            />
+          ))}
+          <div className="p-10 rounded-xl w-full h-auto bg-[#150e22] flex flex-row items-center justify-between mt-11">
+
+
+            <div className="   w-auto h-auto flex flex-col items-baseline gap-2 ">
+              <h2 className='text-4xl text-[#FAFAFA] '>We've Built the Future of Data Centers</h2>
+              <p className='text-[#A1A1AA] text-xl'>Contact our team for a demo</p>
+            </div>
+            <div className="text-slate-50 w-auto h-auto  flex flex-col items-center justify-center text-center gap-2 ">
+              <button className='bg-[#8B5CF6] pl-3 pr-5 rounded-2xl h-8 text-sm ' >set Up a Time</button>
+              <button className='bg-[#18181b] pl-3 pr-5 rounded-2xl h-8 text-sm ' >Learn More</button>
+            </div>
+
+          </div>
+        </div>
+
+      </div >
+
+
     </>
   )
 }
