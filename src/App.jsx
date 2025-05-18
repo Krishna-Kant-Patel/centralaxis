@@ -4,6 +4,9 @@ import viteLogo from '/vite.svg'
 // import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './pages/Home'
+import DCManagement from './pages/DCManagement'
+import HeroSection from './components/Hero/Herosection'
+import NavBar from './components/NavBar/NavBar'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -11,12 +14,15 @@ function App() {
   return (
     <>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="/about" element={<div>About</div>} />
-        <Route path="/:id" element={<div>Dynamic Route</div>} />
-        <Route path="/:id/:name" element={<div>Dynamic Route with Name</div>} />
-        </Routes>
-        
+        <Route element={<NavBar />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<Home />} />
+          <Route path="/dc-management/:id" element={<DCManagement />} />
+          <Route path="/:id/:name" element={<div>Dynamic Route with Name</div>} />
+        </Route>
+      </Routes>
+
+
     </>
   )
 }

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 const Dropdown = ({ title, items, boolean }) => {
   return (
     <div className="relative group inline-block">
@@ -19,11 +20,10 @@ const Dropdown = ({ title, items, boolean }) => {
       >
         <ul className="py-2 ">
           {items.map((item, index) => (
-            <li
-              key={index}
-              className="px-4 py-2 hover:text-gray-300 cursor-pointer transition-colors"
-            >
-              {item}
+            <li key={index} className="px-4 py-2 hover:bg-gray-700">
+              <Link to={item.link} className="block text-sm">
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
