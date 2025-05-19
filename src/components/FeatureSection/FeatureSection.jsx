@@ -29,16 +29,20 @@ const FeatureSection = ({ id }) => {
     const { title, subParagraph, subtitle, items, bottumPoints, bottumHeading} = section;
 
     return (
-        <section className="bg-black text-white py-12 px-4 md:px-8 lg:px-16">
+        <section className=" text-white py-12 px-4 md:px-8 lg:px-16">
             <div className="max-w-7xl mx-auto">
-                <h2 className="text-3xl font-bold mb-4">{title}</h2>
+               <div className={` m-auto ${
+        id>4 ? 'text-center self-center lg:w-[80%]' : ''
+      }`}>
+                 <h2 className="text-3xl font-bold mb-4">{title}</h2>
                 <p className="text-lg mb-10">{subParagraph}</p>
+               </div>
 
                 <h3 className="text-2xl font-semibold mb-6">{subtitle}</h3>
                 <div className="flex flex-row items-center justify-between flex-wrap gap-4 pl-16">
                     {items.map((item, idx) => (
                         <div key={idx} className=" text-white lg:w-[45%] flex flex-col items-baseline justify-center pb-14">
-                            <h4 className="text-xl font-semibold mb-2">{item.pointTitle}rr</h4>
+                            <h4 className="text-xl font-semibold mb-2">{item.pointTitle}</h4>
                             <ul className="list-disc list-inside space-y-2 text-base text-[#FAFAFA">
                                 {item.pointers.map((point, index) => (
                                     <li key={index}>{point}</li>

@@ -4,7 +4,9 @@ import Dropdown from "../Dropdown/Dropdown";
 const HeroSection = () => {
 
 
-
+const handleDemoClick = () => {
+        window.location.href = "https://calendly.com/margarita-centralaxis/30min?month=2025-05";
+    }
 
   return (
     <div className="bg-black text-white flex flex-col">
@@ -35,7 +37,7 @@ const HeroSection = () => {
         <div className="border border-[#1c1c20] min-h-[400px] lg:w-[10%]"></div>
         <div className="border border-[#1c1c20] min-h-[100px] lg:w-[10%]"></div>
         <div className="border border-[#1c1c20] min-h-[100px] lg:w-[80%] flex  justify-center">
-          <button style={{boxShadow:"10px 10px 100px #8357e7"}} className="bg-[#8357e7] w-[30%] h-[60px] hover:bg-purple-700 transition text-white font-medium px-6 py-3 shadow-custom ">
+          <button style={{boxShadow:"10px 10px 100px #8357e7"}} onClick={handleDemoClick} className="bg-[#8357e7] w-[30%] h-[60px] hover:bg-purple-700 transition text-white font-medium px-6 py-3 shadow-custom ">
           Request Demo
         </button>
         </div>

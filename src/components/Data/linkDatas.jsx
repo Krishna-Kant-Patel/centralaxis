@@ -33,20 +33,20 @@ export const menuItems = [
   },
   {
     title: "Customer Portal",
-    link: "/customer-portal",
+    link: "/dc-management/4",
   },
   {
     title: "Custom Insights",
-    link: "/custom-insights",
+    link: "/dc-management/5",
   }
 ];
 
 export const SolutionItems = [
-  { title: "Digital Twins", link: "/" },
-  { title: "Smart Power Mapping", link: "/" },
-  { title: "Predictive Failure and Alerting", link: "/" },
-  { title: "Smart Control Systems", link: "/" },
-  { title: "Automated Discovery", link: "/" },
+  { title: "Digital Twins", link: "/dc-management/6" },
+  { title: "Smart Power Mapping", link: "/dc-management/7" },
+  { title: "Predictive Failure and Alerting", link: "/dc-management/8" },
+  { title: "Smart Control Systems", link: "/dc-management/9" },
+  { title: "Automated Discovery", link: "/dc-management/10" },
 ];
 
 export const complianceInfo = [
