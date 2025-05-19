@@ -17,7 +17,7 @@ export const menuItems = [
   },
   {
     title: "Colocation Management",
-    link: "/colocation-management",
+    link: "/",
   },
   {
     title: "Data Center Planner",
@@ -25,11 +25,11 @@ export const menuItems = [
   },
   {
     title: "Firmware Management",
-    link: "/firmware-management",
+    link: "/",
   },
   {
     title: "IP Address Management",
-    link: "/ip-address-management",
+    link: "/",
   },
   {
     title: "Customer Portal",
