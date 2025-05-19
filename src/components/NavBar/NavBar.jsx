@@ -11,19 +11,20 @@ function NavBar() {
   };
 
   return (
-    <div><header className="flex items-center justify-between px-4 md:px-12 py-4 bg-black">
+    <>
+      <header   className="w-full flex items-center justify-between px-4 md:px-12 py-4 bg-black">
         <div onClick={handleLogoClick} className="flex items-center space-x-2 cursor-pointer">
           <img src="https://www.centralaxis.com/_next/image?url=%2Flogo_white_icon_only.png&w=96&q=75" alt="Logo" className="h-8 w-8" />
           <span className="text-xl font-semibold text-[#FAFAFA]">CentralAxis</span>
         </div>
 
         {/* Desktop Nav */}
-        <nav className="hidden md:flex space-x-6 text-sm font-medium">
-          <Dropdown title="Data Center Infrastructure Management " items={menuItems} boolean={false}/>
-          <Dropdown title="Intelligence Solutions" items={SolutionItems} boolean={false}/>
-          <Dropdown title="Data Center Compliance" items={complianceInfo} boolean={false}/>
-          <Dropdown title="Sustainability Blog" items={energyFundamentals}   boolean={true} />
-          
+        <nav  className="hidden md:flex space-x-6 text-sm font-medium">
+          <Dropdown title="Data Center Infrastructure Management " items={menuItems} boolean={false} />
+          <Dropdown title="Intelligence Solutions" items={SolutionItems} boolean={false} />
+          <Dropdown title="Data Center Compliance" items={complianceInfo} boolean={false} />
+          <Dropdown title="Sustainability Blog" items={energyFundamentals} boolean={true} />
+
         </nav>
 
         {/* Mobile Menu Icon */}
@@ -36,7 +37,7 @@ function NavBar() {
         </div>
       </header>
       <Outlet />
-      </div>
+    </>
   )
 }
 

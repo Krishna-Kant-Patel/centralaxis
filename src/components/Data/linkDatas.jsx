@@ -5,7 +5,7 @@ export const menuItems = [
   },
   {
     title: "Asset Tracking",
-    link: "/asset-tracking",
+    link: "/asset-management/1",
   },
   {
     title: "Network Management",
@@ -13,7 +13,7 @@ export const menuItems = [
   },
   {
     title: "Change Management",
-    link: "/change-management",
+    link: "/asset-management/2",
   },
   {
     title: "Colocation Management",
