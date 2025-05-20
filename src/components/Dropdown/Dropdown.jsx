@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 const Dropdown = ({ title, items, boolean }) => {
   return (
     <div className=" group inline-block">
-      {/* Trigger area */}
+      
        <div className="cursor-pointer flex items-center text-sm text-[#FAFAFA] hover:text-gray-300 transition-colors">
         {title}
         <span
@@ -12,7 +12,7 @@ const Dropdown = ({ title, items, boolean }) => {
         </span>
       </div>
 
-      {/* Dropdown menu */}
+  
       <div style={{border:"1px solid #FFFFFF"}}
         className={`borrder-2 border-[#FFFFFF] absolute  ${boolean? 'right-4' : null} mt-2 w-64 bg-black text-[#FAFAFA] rounded-md shadow-lg ring-1 ring-white ring-opacity-5
                    opacity-0 invisible group-hover:opacity-100 group-hover:visible
