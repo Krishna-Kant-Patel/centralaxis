@@ -95,16 +95,16 @@ function BuildForAI() {
               reverse={index % 2 === 1}
             />
           ))}
-          <div className="p-10 rounded-xl w-full h-auto bg-[#150e22] flex flex-row items-center justify-between mt-11">
+          <div className=" p-4 lg:p-10 rounded-xl w-full h-auto bg-[#150e22] flex flex-col gap-2 lg:flex-row items-center justify-between mt-11">
 
 
             <div className="   w-auto h-auto flex flex-col items-baseline gap-2 ">
               <h2 className='text-4xl text-[#FAFAFA] '>We've Built the Future of Data Centers</h2>
               <p className='text-[#A1A1AA] text-xl'>Contact our team for a demo</p>
             </div>
-            <div className="text-slate-50 w-auto h-auto  flex flex-col items-center justify-center text-center gap-2 ">
-              <button className='bg-[#8B5CF6] pl-3 pr-5 rounded-2xl h-8 text-sm ' >set Up a Time</button>
-              <button className='bg-[#18181b] pl-3 pr-5 rounded-2xl h-8 text-sm ' >Learn More</button>
+            <div className="text-slate-50 w-full lg:w-auto h-auto  flex flex-row lg:flex-col items-center justify-center text-center gap-2 ">
+              <button className='bg-[#8B5CF6] w-1/2 lg:w-auto pl-3 pr-5 rounded-2xl h-8 text-sm ' >set Up a Time</button>
+              <button className='bg-[#18181b] w-1/2 lg:w-auto pl-3 pr-5 rounded-2xl h-8 text-sm ' >Learn More</button>
             </div>
 
           </div>

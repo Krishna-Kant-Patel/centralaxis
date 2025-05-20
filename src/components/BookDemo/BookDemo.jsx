@@ -2,8 +2,11 @@ import React from "react";
 
 
 export default function BookDemo() {
+  const handleDemoClick = () => {
+    window.location.href = "https://calendly.com/margarita-centralaxis/30min?month=2025-05";
+  }
   return (
-    <section className="py-6 px-20 ">
+    <section className="py-6  px-4 lg:px-20 ">
       <div
         className="relative rounded-xl overflow-hidden bg-cover bg-center min-h-[248px] md:min-h-[250px] flex items-center justify-center"
         style={{
@@ -17,7 +20,7 @@ export default function BookDemo() {
           <p className="text-sm md:text-xl text-[#FFFFFFB2] mb-4">
             See how CentralAxis can revolutionize your data center operations.
           </p>
-          <button className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-100 transition">
+          <button onClick={handleDemoClick} className="bg-white text-black px-4 py-2 rounded shadow hover:bg-gray-100 transition">
             Schedule Now
           </button>
         </div>
