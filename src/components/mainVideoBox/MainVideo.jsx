@@ -52,6 +52,11 @@ function MainVideo({ id }) {
       videoSrc: '',
       title: 'AI-Powered Automated Discovery',
     },
+    {
+      id: 11,
+      videoSrc: '',
+      title: 'Custom Solutions Built for Your Data Center',
+    },
   ];
 
   const selected = data.find(video => video.id == id);

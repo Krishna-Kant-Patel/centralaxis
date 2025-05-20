@@ -731,20 +731,29 @@ export const featureData = [
         
     ],
   },
+  
   {
     id: 11,
-    title: "Advanced Diagnostics",
-    subtitle: "Run in-depth diagnostics to ensure optimal network health and security.",
+    title: "Every data center is different — so we build to match.",
+     subParagraph: "Whether you’re migrating to a new site, mapping legacy networks, or need a custom integration built around your workflow — the CentralAxis team can help. We deliver full-service, flexible solutions tailored to your infrastructure, processes, and business goals.",
+    subtitle: "",
     items: [
-      "Automated network health checks",
-      "Deep packet inspection and analysis",
-      "Connection quality monitoring",
-      "Network path analysis tools"
+        {
+            pointTitle: "",
+            pointers:[
+            ]
+        },
+        {
+            pointTitle: "",
+            pointers:[
+            ]
+        },
+        
     ],
-     bottumHeading: "Monitoring Benefits",
+     bottumHeading: "Built to Save Hours — and Prevent Errors",
     bottumPoints: [
         {
-            pointTitle: "Operational Excellence",
+            pointTitle: "Data Center Migrations",
             pointers:[
                 "Real-time connection tracking and logging",
                 "Port mapping and service discovery",
@@ -753,7 +762,7 @@ export const featureData = [
             ]
         },
         {
-            pointTitle: "Cost Optimization",
+            pointTitle: "Legacy Network Mapping",
             pointers:[
                 "Real-time connection tracking and logging",
                 "Port mapping and service discovery",
@@ -762,7 +771,34 @@ export const featureData = [
             ]
         },
         {
-            pointTitle: "Risk Management",
+            pointTitle: "Custom Dashboards & Interfaces",
+            pointers:[
+                "Real-time connection tracking and logging",
+                "Port mapping and service discovery",
+                "Protocol-level traffic analysis",
+                "Historical connection pattern analysis"
+            ]
+        },
+        {
+            pointTitle: "Workflow Automation",
+            pointers:[
+                "Real-time connection tracking and logging",
+                "Port mapping and service discovery",
+                "Protocol-level traffic analysis",
+                "Historical connection pattern analysis"
+            ]
+        },
+        {
+            pointTitle: "Advanced Reporting & Exports",
+            pointers:[
+                "Real-time connection tracking and logging",
+                "Port mapping and service discovery",
+                "Protocol-level traffic analysis",
+                "Historical connection pattern analysis"
+            ]
+        },
+        {
+            pointTitle: "Tailored Integrations",
             pointers:[
                 "Real-time connection tracking and logging",
                 "Port mapping and service discovery",
@@ -772,5 +808,6 @@ export const featureData = [
         },
         
     ],
-  }
+  },
+  
 ];

@@ -38,6 +38,10 @@ export const menuItems = [
   {
     title: "Custom Insights",
     link: "/dc-management/5",
+  },
+  {
+    title: "Custom Data Center Solutions",
+    link: "/dc-management/11",
   }
 ];
 
